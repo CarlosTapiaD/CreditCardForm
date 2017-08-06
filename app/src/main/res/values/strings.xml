@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Credit Card Form</string>
+    <string name="inf">Informacion de la tarjeta de credito</string>
+    <string name="guardar">Guardar</string>
+    <string name="name">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="numeroT">Numero de tarjeta</string>
+    <string name="mes">Mes</string>
+    <string name="anio">Año</string>
+    <string name="codigo">Codigo</string>
+    <string name="direccion">Calle y Numero</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="estado">Estado</string>
+    <string name="cp">Codigo Postal</string>
+    <string name="direc">Direccion</string>
+
+    <string name="nDetail"></string>
+</resources>

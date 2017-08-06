@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="carlostapiadominguez.creditcardform.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/inform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inf"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:maxLength="20"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+
+                />
+            <EditText
+                android:id="@+id/apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/apellido"
+                android:inputType="text"
+                android:maxLength="20"
+                android:imeOptions="actionNext"/>
+            <EditText
+                android:id="@+id/numeroT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/numeroT"
+                android:inputType="numberDecimal"
+                android:digits="1234567890"
+                android:imeOptions="actionNext"
+                android:maxLength="12"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <EditText
+                    android:id="@+id/mes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:digits="1234567890"
+                    android:maxLength="2"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/mes"/>
+                <EditText
+                    android:id="@+id/anios"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:hint="@string/anio"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:id="@+id/codigo"
+                    android:layout_width="100dp"
+                    android:inputType="numberDecimal"
+                    android:digits="1234567890"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:hint="@string/codigo"
+                    android:imeOptions="actionNext"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/direc"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                />
+            <EditText
+                android:id="@+id/calle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/direccion"
+                android:inputType="text"
+                android:maxLength="20"
+                android:imeOptions="actionNext"
+                />
+            <EditText
+                android:id="@+id/ciudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ciudad"
+                android:inputType="text"
+                android:maxLength="20"
+                android:imeOptions="actionNext"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/estado"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/estado"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:id="@+id/cp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cp"
+                    android:inputType="numberDecimal"
+                    android:digits="1234567890"
+                    android:maxLength="5"
+                    android:imeOptions="actionSend"
+                    />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
